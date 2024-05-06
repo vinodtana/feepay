@@ -6758,7 +6758,9 @@ a.close.disabled {
 .bg-primary {
   background-color: var(--lightBlack) !important;
 }
-
+.bg-primary-header {
+  background-color: #17a2b8;
+}
 a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
@@ -10298,6 +10300,8 @@ a.text-dark:focus {
   color: #e85d47;
 }
 .logo-text-main {
+  font-size: 32px;
+  text-transform: uppercase;
 }
 
 .footer-bg-last {
@@ -10305,5 +10309,99 @@ a.text-dark:focus {
 }
 
 .footer-bg-last * {
-  color: #222222 !important;
+  color: var(--lightBlack) !important;
+}
+.our-solutions-sec .card-title {
+  text-transform: capitalize;
+  font-size: 34px;
+  color: #3e54ce;
+  font-weight: 800;
+}
+
+.auto-main-drop-down .dropdown-menu {
+  width: 200px;
+  /* margin-left: -120px; */
+  padding: 0px;
+  left: -120px;
+}
+.auto-main-drop-down::before {
+  grid-column: none;
+}
+.dropdown-parent-item {
+  margin: 0px !important;
+  border-bottom: 1px solid #e2e2e2;
+  /* margin-bottom: 5px !important;
+  padding-bottom: 5px !important; */
+}
+.dropdown-institute-item {
+  margin: 0px;
+}
+.auto-main-drop-down li a {
+  text-align: left;
+  padding-left: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding: 10px;
+  padding-left: 16px;
+}
+.navbar-nav .nav-link {
+  color: #fff;
+}
+.dropend .dropdown-toggle {
+  color: salmon;
+  margin-left: 1em;
+}
+.dropdown-item:hover {
+  background-color: var(--lightBlack);
+  color: #fff;
+}
+.dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown:hover > .dropdown-menu,
+.dropend:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0.125em;
+  margin-left: 0.125em;
+}
+.login-button-dropdown,
+.login-button-dropdown:hover {
+  background: var(--lightBlack);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+.auto-main-drop-down {
+  grid-template-columns: 0fr;
+}
+
+@media screen and (min-width: 769px) {
+  .dropend:hover > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+  .dropend .dropdown-toggle {
+    margin-left: 0.5em;
+  }
+}
+@media screen and (max-width: 769px) {
+  .logo-text-main {
+    font-size: 20px;
+  }
+  .auto-main-drop-down {
+    grid-template-columns: 0fr;
+    padding-left: 0px;
+    margin-left: -15px;
+    margin-top: 10px;
+  }
+  .auto-main-drop-down .dropdown-menu {
+    left: 0px;
+  }
+  .auto-main-drop-down > li {
+    margin-left: 0px;
+  }
+  .main-top-header-text {
+    margin-top: 20px;
+  }
 }
