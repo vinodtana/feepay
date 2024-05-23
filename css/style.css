@@ -7858,6 +7858,7 @@ button.bg-dark:focus {
 
 .position-fixed {
   position: fixed !important;
+  z-index: 99;
 }
 
 .position-sticky {
@@ -10305,19 +10306,22 @@ a.text-dark:focus {
 }
 
 .footer-bg-last {
-  background-color: #ecf0f5 !important;
+  background-color: #17a2b8 !important;
 }
 
 .footer-bg-last * {
-  color: var(--lightBlack) !important;
+  color: #fff !important;
 }
+
 .our-solutions-sec .card-title {
   text-transform: capitalize;
   font-size: 34px;
   color: #3e54ce;
   font-weight: 800;
 }
-
+.footer-quick-links a {
+  font-size: 18px;
+}
 .auto-main-drop-down .dropdown-menu {
   width: 200px;
   /* margin-left: -120px; */
@@ -10374,7 +10378,37 @@ a.text-dark:focus {
 .auto-main-drop-down {
   grid-template-columns: 0fr;
 }
-
+.pricacy-page-Container {
+  padding: 60px 20px;
+  color: #000;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 150px;
+}
+.pricacy-page-Container h5 {
+  color: #000;
+  font-weight: 600;
+  font-size: 24px;
+  font-style: normal;
+  margin-bottom: 16px;
+}
+.pricacy-page-Container li span {
+  font-weight: 600;
+  font-size: 18px;
+}
+.auto-main-drop-down {
+  list-style-type: none;
+}
+.pricacy-page-Container a {
+  text-decoration: underline;
+  color: #007bff;
+}
+.font-weight-bold-sec-cont {
+  margin-right: 0px !important;
+}
+.deltape-page-body-content {
+  padding-top: 90px;
+}
 @media screen and (min-width: 769px) {
   .dropend:hover > .dropdown-menu {
     position: absolute;

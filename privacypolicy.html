@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Deltape - Automated Fee Management for Educational Institutes</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- <link href="css/timeline.css" rel="stylesheet" /> -->
+    <script type="text/javascript">
+        (function (f, b) {
+            if (!b.__SV) {
+                var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) {
+                    function g(a, d) { var b = d.split("."); 2 == b.length && (a = a[b[0]], d = b[1]); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))) } } var a = b; "undefined" !== typeof c ? a = b[c] = [] : c = "mixpanel"; a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d }; a.people.toString = function () { return a.toString(1) + ".people (stub)" }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+                    for (h = 0; h < i.length; h++)g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]) } } for (var d = {}, e = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++)b(j[c]); return d }; b._i.push([e, f, c])
+                }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ?
+                    MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g)
+            }
+        })(document, window.mixpanel || []);
+
+        // Enabling the debug mode flag is useful during implementation,
+        // but it's recommended you remove it for production
+        mixpanel.init('95a7d87662871e48323b6c9f8b7311a4', { debug: true });
+        mixpanel.track('Page_on_loaded');
+    </script>
+
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-fixed shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="" class="navbar-brand font-weight-bold text-secondary">
+                <span class="text-primary logo-text-main">Deltape</span>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold font-weight-bold-sec-cont mx-auto py-0">
+                    <!-- <a href="index.html" class="nav-item nav-link active">Home</a> -->
+                    <a href="./index.html#aboutUs" class="nav-item nav-link active">About Us</a>
+
+
+                    <a href="./index.html#Features" class="nav-item nav-link active">For Institutes</a>
+                    <a href="./index.html#Features" class="nav-item nav-link active">For Parents</a>
+                    <!-- <a href="#Features" class="nav-item nav-link active">Features</a>
+          <a href="#HowitWorks" class="nav-item nav-link active">How it Works</a> -->
+                    <!-- <a href="#Benefits" class="nav-item nav-link active">Benefits</a> -->
+                    <a href="./index.html#Contact" class="nav-item nav-link active">Contact Us</a>
+                </div>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="gallery.html" class="dropdown-item">Gallery</a>
+                        <a href="feature.html" class="dropdown-item">Features</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item active">404 Page</a>
+                    </div>
+                </div> -->
+                <div class="collapse--navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav--me-auto auto-main-drop-down mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle login-button-dropdown" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Login
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-parent-item"><a class="dropdown-item" target="_blank"
+                                        href="https://deltapay.in">Login as Parent</a></li>
+                                <li class="dropdown-institute-item"><a class="dropdown-item" target="_blank"
+                                        href="https://deltapay.in">Login as Institute</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <a href
+          ="#" class="btn btn-primary px-4"> -->
+            <!-- <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Login</a>
+        <div class="dropdown-menu rounded">
+          <a target="_blank" href="partner.deltape.in" class="dropdown-item">Login as Parent</a>
+          <a target="_blank" href="deltapay.in" class="dropdown-item">Login as Institute</a>
+        </div>
+      </div> -->
+            <!-- </a> -->
+            <!-- <a href="#" class="btn btn-primary px-4">Login as Parent</a> &nbsp;&nbsp;&nbsp;
+        <a href="#" class="btn btn-primary px-4">Login as Institute</a> -->
+
+
+    </div>
+    </nav>
+    </div>
+    <!-- Navbar End -->
+    <div class="pricacy-page-Container deltape-page-body-content1">
+        <h5 class="contact-us-main-header">Deltape Terms and Conditions
+
+        </h5>
+        <h5>Last Updated: 18 May 2024
+        </h5>
+        <p>This document outlines the terms and conditions applicable to accessing and using the website
+            <a href="https://www.deltape.in" target="_blank">https://www.deltape.in</a> (available at <a
+                href="https://dashboard.deltape.in" target="_blank">https://dashboard.deltape.in</a>) (collectively,
+            "Platform"),
+            managed and
+            operated by Deltape Technologies Services Private Limited ("Deltape", "Company", "We", "Us"). By accessing
+            the Platform or using its services, users ("You", "Your", "Customer", "User") agree to be bound by these
+            Terms and Conditions ("Terms"). These Terms, along with the Privacy Policy, define Deltape's relationship
+            with You and are subject to applicable rules, guidelines, policies, terms, and conditions for any Service
+            provided through this Platform.
+
+        </p>
+        <P>By visiting the Platform, registering your information, or using our Services, including features,
+            technologies, or functions offered on our Platform (collectively "Services"), you accept these Terms.
+            Services exclude third-party products and services offered via the Platform.
+        </P>
+        <p>Your use of the Services signifies acceptance of these Terms. Do not use the Services or Platform if You do
+            not agree to the Terms.
+        </p>
+        <p>These Terms are "electronic records" under applicable information technology laws and various rules, as
+            amended from time to time. Generated by a computer system, they do not require physical or digital
+            signatures.
+        </p>
+        <p>Our Services include multiple financial products, with additional terms and requirements (including age
+            requirements) possibly applicable.
+        </p>
+        <div class="deltape-policy-box-header terms-con-add-space">
+            <h5>Definitions
+            </h5>
+            <p>We collect the following types of information when you use the Services:
+            </p>
+            <ul>
+                <li><span>Dashboard:</span> An electronic tool owned by Deltape for tracking, displaying, and storing
+                    data related to Transactions.
+                </li>
+                <li><span>Services:</span> SaaS-based Platform operations managing payment plans, including EMI options,
+                    recurring payments, instant payments (via QR codes, payment gateways, payment links), and related
+                    services.
+                </li>
+                <li><span>Users: </span>Individuals or entities using the Services, including financial institutions or
+                    businesses, and those acting on their behalf.
+                </li>
+
+            </ul>
+            <h5>Changes to These Terms
+
+            </h5>
+            <p>Deltape may modify these Terms periodically. Updated Terms will be posted on the website/app, indicating
+                the last revision date. Continued use of the Services after changes signifies acceptance of the new
+                Terms.
+
+            </p>
+            <p>Deltape reserves the right to temporarily or permanently discontinue Services, with reasonable notice,
+                except for feature/content changes or security and integrity maintenance. Deltape is not liable for any
+                modification or discontinuation of Services.
+            </p>
+            <h5>User Eligibility
+            </h5>
+            <p>By accepting these Terms, You confirm that:
+            </p>
+            <h5>For Individuals:
+            </h5>
+            <ul>
+                <li>You are an Indian resident.
+                </li>
+                <li>You are over 18 years old.
+                </li>
+                <li>You can legally contract under Indian law.
+                </li>
+                <li>You are not prohibited from accessing or using the Services under Indian or other applicable laws.
+                </li>
+
+            </ul>
+            <h5>
+                For Institutes:
+
+            </h5>
+            <ul>
+                <li>Entities are registered according to applicable laws.
+                </li>
+                <li>Entities have valid certifications for education (virtual/physical).
+                </li>
+                <li>Entities have the necessary constitutional provisions.
+                </li>
+
+
+            </ul>
+            <h5>Scope of License to Use
+            </h5>
+            <P>For businesses or entities, this license allows access and use of the Platform for authorized
+                representatives with provided Registration Data. Unauthorized access voids this license and violates
+                these Terms. Deltape may revoke this license at any time without notice or cause.
+
+            </P>
+            <h5>For Channel Partners:
+            </h5>
+            <ul>
+                <li>Individual channel partners follow the criteria in the "For Individuals" section
+                </li>
+                <li> Entities must complete KYC requirements and necessary documentation to enroll as a channel partner
+                    with Deltape.
+
+                </li>
+
+            </ul>
+            <h5>Registration
+            </h5>
+            <p>To use the Services, register on the Platform and provide accurate, complete information. Deltape may
+                suspend accounts with incorrect or erroneous information, or terms violations. Additional terms may
+                apply for third-party products and services.
+
+            </p>
+            <p>You are responsible for maintaining your password and login ID confidentiality. Inform Deltape of any
+                unauthorized account use immediately. Deltape is not liable for unauthorized access.
+            </p>
+            <h5>Proprietary Rights and Platform Access
+
+            </h5>
+            <p>Deltape owns all rights to the Services and Platform, including intellectual property. The limited
+                license for personal use of the Platform does not include rights to download, modify, reverse engineer,
+                or transfer the Services or Platform. You may not use Deltape's trade names, trademarks, or proprietary
+                notices without consent.
+
+            </p>
+            <p>Prohibited activities include deep-linking, page-scraping, hacking, password mining, probing the
+                Platform's security, or misrepresenting identity.
+            </p>
+            <h5>Privacy</h5>
+            <p>Refer to our Privacy Policy. Using the Service means consenting to personal data transfer and processing
+                in India. Phone calls between You and our representatives may be recorded for quality monitoring
+                purposes.
+            </p>
+            <h5>Disclaimers</h5>
+            <p>Deltape does not guarantee the accuracy of User or Third-Party Content. We are not responsible for any
+                content You may find offensive or objectionable. Service availability may vary, and Deltape is not
+                responsible for technical issues or unauthorized access leading to losses or damages.
+            </p>
+            <h5>Limitation on Liability
+            </h5>
+            <p>Deltape or its affiliates are not liable for indirect, consequential, exemplary, incidental, special, or
+                punitive damages. Liability is limited to the amount paid by You for Services in the three months
+                preceding any claim, not exceeding $100. Without payment, Your remedies are limited to injunctive
+                relief.
+            </p>
+            <h5>Governing Law; Jurisdiction; Dispute Resolution
+            </h5>
+            <p>These Terms are governed by Indian law. Disputes are subject to binding arbitration in Bangalore, under
+                the Indian Arbitration & Conciliation Act, 1996. Arbitration awards are binding and conclusive.
+            </p>
+            <h5>Indemnity</h5>
+            <p>You agree to indemnify Deltape and its affiliates against claims, liabilities, damages, and expenses
+                arising from unauthorized Service use or breach of these Terms.
+            </p>
+            <h5>Cancellation Policy
+            </h5>
+            <p>Online payments are non-refundable. Duplicate payments will be adjusted in future billing.
+            </p>
+            <h5>Miscellaneous
+
+            </h5>
+            <p>Failure to enforce any right or provision does not waive it. Invalid provisions do not affect the
+                remaining Terms' validity. Unlawful or unenforceable provisions are severable.
+            </p>
+            <h5>Contact Information
+
+            </h5>
+            <p>For queries or clarifications, please contact us at support@deltape.in.
+            </p>
+
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <div class="container-fluid footer-bg-last bg-secondary text-white mt-5 py-3 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+                    style="font-size: 40px; line-height: 40px">
+                    <i class="flaticon-043-teddy-bear"></i>
+                    <span class="text-white">Deltape</span>
+                </a>
+                <p>
+                    If you're interested in learning more about how Deltape can transform your educational institute's
+                    fee
+                    management process, we'd love to hear from you.
+                </p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Get In Touch</h3>
+                <div class="d-flex">
+                    <h4 class="fa fa-map-marker-alt text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Address</h5>
+                        <p>#45, 9th Cross, JP Nagar, <br />
+                            Bangalore - 560056
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <h4 class="fa fa-envelope text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Email</h5>
+                        <p>info@deltape.in</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <h4 class="fa fa-phone-alt text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Phone</h5>
+                        <p> +91 805 080 7711</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5 footer-quick-links">
+                <h3 class="text-primary mb-4">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a href="/institutes.html" class="nav-item nav-link active">For Institutes</a>
+                    <a href="/parents.html" class="nav-item nav-link active">For Parents</a>
+                    <a target="_blank" href="https://deltapay.in" class="nav-item nav-link active">Login for
+                        Institutes</a>
+                    <a target="_blank" href="https://deltapay.in" class="nav-item nav-link active">Login for Parents</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5 footer-quick-links">
+                <h3 class="text-primary mb-4">Company</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a href="./index.html#aboutUs" class="nav-item nav-link active">About Us</a>
+                    <a href="./index.html#Contact" class="nav-item nav-link active">Grievance Redressal</a>
+                    <a href="./index.html#Contact" class="nav-item nav-link active">Compliance</a>
+                    <a href="./termsandconditions.html" class="nav-item nav-link active">Terms & Conditions</a>
+                    <a href="./privacypolicy.html" class="nav-item nav-link active">Privacy Policy</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid pt-3" style="border-top: 1px solid #fff ;">
+            <p class="m-0 text-center text-white">
+                &copy;
+                All Rights Reserved Deltape
+
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
