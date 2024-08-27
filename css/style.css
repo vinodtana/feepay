@@ -10409,6 +10409,9 @@ a.text-dark:focus {
 .deltape-page-body-content {
   padding-top: 90px;
 }
+.logo-text-main-img{
+  max-height: 65px;
+}
 .our-solutions-sec h6 {
   font-weight: 800;
   color: #000;
