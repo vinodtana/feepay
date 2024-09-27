@@ -1,0 +1,261 @@
+.header-login-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.header-login-buttons button {
+  background: #17a2b8;
+  border: none;
+  color: #fff;
+  height: 48px;
+  border-radius: 8px;
+  width: 150px;
+  /* font-family: Poppins; */
+  font-size: 16px;
+  font-weight: 700;
+}
+.delta-main-color {
+  color: #17a2b8;
+}
+.text-white12 {
+  color: #808080;
+}
+.text-white1 {
+  color: #000;
+}
+.deltape-page-body-content,
+.text-lg-right {
+  padding-right: 0px;
+}
+.main-new-header {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+}
+.main-new-headerh4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #2e2e2e;
+}
+.main-new-headerp {
+  color: #808080;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.Our-Solutions-con {
+  width: 70%;
+  margin: auto;
+}
+
+.Our-Solutions-con1 {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
+.Solutions-con1-left {
+  width: 45%;
+}
+.Solutions-con1-right {
+  width: 55%;
+  padding-top: 30px;
+}
+.Our-Solutions-con p {
+  color: #808080;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.Our-Solutions-con h4 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #06121f;
+}
+
+.fast-secure-payment-sec {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.fast-secure-payment-sec-con {
+  margin-top: 30px;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.fast-secure-payment-sec-con > div {
+  padding: 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px 0px #00000029;
+}
+
+.Benefits-for-Parents-sec {
+  margin-top: 50px;
+  background: #cbe7eb;
+  padding: 30px 50px;
+  background-color: #cbe7eb;
+}
+
+.Benefits-for-Parents-sec > p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #616161;
+}
+.Benefits-for-Parents-sec > p {
+  text-align: center;
+}
+.Benefits-for-Parents-sec-con {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.Benefits-for-Parents-sec-con {
+}
+.benefit-sec-box p {
+  text-align: left;
+}
+.benefit-sec-box {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+.benefit-sec-box h4 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+/* Power-Integrations-sec */
+.Power-Integrations-sec {
+  margin-top: 50px;
+  padding: 30px 50px;
+}
+.Integrations-sec-con-left > h3 {
+  color: #2e2e2e;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: left;
+}
+.Power-Integrations-sec-con {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.Integrations-sec-con-left {
+  padding-top: 100px;
+}
+.Integrations-sec-con-left > p {
+  color: #343434;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Integrations-sub-sec {
+  display: flex;
+  justify-content: space-between;
+}
+.power-box {
+  width: 140px;
+}
+.power-box p {
+  color: #808080;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.USPs-of-Deltape-sec {
+  margin-top: 50px;
+  padding: 30px 50px;
+  text-align: center;
+}
+.USPs-box-all {
+  margin-top: 50px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* gap: 50px; */
+}
+.USPs-box-row {
+  width: 220px;
+}
+.USPs-box-row h3 {
+  color: #2e2e2e;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.USPs-box-row p {
+  color: #616161;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+/* Deltape-Works-sec */
+.Deltape-Works-sec {
+  background: #cbe7eb;
+  margin-top: 50px;
+  padding: 30px 50px;
+}
+.Deltape-Works-sec-con-left > h2 {
+  text-align: left;
+}
+.Deltape-Works-sec-con {
+  /* margin-top: 30px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.Deltape-Works-sec-con-right h5 {
+  color: #2e2e2e;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 10px;
+}
+.Deltape-Works-sec-con-right p {
+  text-align: left;
+}
+.Deltape-Works-sec-con-right h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.faq-content {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.footer-bg-last p,
+.footer-bg-last a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.mb-0 {
+  margin-bottom: 0px;
+}

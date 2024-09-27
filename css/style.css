@@ -2495,7 +2495,7 @@ textarea.form-control.is-invalid {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 700;
   color: #666666;
   text-align: center;
   vertical-align: middle;
@@ -2505,7 +2505,7 @@ textarea.form-control.is-invalid {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 30px;
+  border-radius: 8px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2543,8 +2543,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: var(--lightBlack);
-  border-color: var(--lightBlack);
+  background-color: #138496;
+  border-color: #117a8b;
 }
 
 .btn-primary:hover {
@@ -2871,7 +2871,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary {
   color: var(--lightBlack);
-  border-color: var(--lightBlack);
+  border-color: #fff;
 }
 
 .btn-outline-primary:hover {
@@ -10186,8 +10186,9 @@ a.text-dark:focus {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  padding: 30px 15px;
+  /* padding: 30px 15px; */
   color: #00394f;
+  font-weight: 600 !important;
   outline: none;
 }
 
@@ -10404,12 +10405,12 @@ a.text-dark:focus {
   color: #007bff;
 }
 .font-weight-bold-sec-cont {
-  margin-right: 0px !important;
+  /* margin-right: 0px !important; */
 }
 .deltape-page-body-content {
   padding-top: 90px;
 }
-.logo-text-main-img{
+.logo-text-main-img {
   max-height: 65px;
 }
 .our-solutions-sec h6 {
