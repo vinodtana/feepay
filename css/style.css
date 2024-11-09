@@ -2583,30 +2583,30 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #fff;
-  background-color: #00394f;
-  border-color: #00394f;
+  color: #18a1b7;
+  background-color: #fff;
+  border-color: #18a1b7;
+  border: 1px solid #18a1b7;
 }
 
 .btn-secondary:hover {
-  color: #fff;
-  background-color: #001d29;
-  border-color: #00141c;
+  color: #18a1b7;
+  background-color: #fff;
+  border-color: #18a1b7;
 }
 
 .btn-secondary:focus,
 .btn-secondary.focus {
-  color: #fff;
-  background-color: #001d29;
-  border-color: #00141c;
-  box-shadow: 0 0 0 0.2rem rgba(38, 87, 105, 0.5);
+  color: #18a1b7;
+  background-color: #fff;
+  border-color: #18a1b7;
 }
 
 .btn-secondary.disabled,
 .btn-secondary:disabled {
-  color: #fff;
-  background-color: #00394f;
-  border-color: #00394f;
+  color: #18a1b7;
+  background-color: #fff;
+  border-color: #18a1b7;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active,
@@ -10418,6 +10418,13 @@ a.text-dark:focus {
   color: #000;
   font-size: 20px;
 }
+.main-top-header-text,
+.main-top-header-text1 {
+  font-size: 46px;
+}
+.main-top-header-text1 {
+}
+
 @media screen and (min-width: 769px) {
   .dropend:hover > .dropdown-menu {
     position: absolute;
@@ -10446,5 +10453,7 @@ a.text-dark:focus {
   }
   .main-top-header-text {
     margin-top: 20px;
+  }
+  .main-top-header-text1 {
   }
 }
