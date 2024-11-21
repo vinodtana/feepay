@@ -1,0 +1,69 @@
+@media (max-width: 767px) {
+  .learn-More-btn-sec-top {
+    margin-left: 0px !important;
+    margin-top: 20px !important;
+  }
+  .Our-Solutions-con1 {
+    display: block;
+  }
+  .Solutions-con1-left,
+  .Solutions-con1-right {
+    width: 100%;
+  }
+  .Solutions-con1-left img,
+  .Solutions-con1-right img {
+    max-width: 100%;
+    height: 100px;
+    width: 130px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .Solutions-con1-left {
+    text-align: center;
+  }
+  .mobile-img-view {
+    display: block;
+  }
+  .desktop-img-view {
+    display: none;
+  }
+  .main-new-header,
+  .Integrations-sec-con-left > h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .fast-secure-payment-sec-con,
+  .Power-Integrations-sec-con {
+    grid-template-columns: 1fr;
+    display: block;
+  }
+  .Benefits-for-Parents-sec-con-right {
+    display: none;
+  }
+  .benefit-sec-box,
+  .Benefits-for-Parents-sec-con {
+    display: block;
+  }
+  .Benefits-for-Parents-sec,
+  .Power-Integrations-sec,
+  .USPs-of-Deltape-sec,
+  .Deltape-Works-sec {
+    padding: 16px;
+  }
+  .Integrations-sec-con-right img {
+    max-width: 100%;
+  }
+  .USPs-box-row {
+    width: 100%;
+  }
+  .USPs-box-all,
+  .Deltape-Works-sec-con {
+    display: block;
+  }
+  .faq-content {
+    width: 95%;
+    margin: auto;
+    margin: 16px;
+  }
+}

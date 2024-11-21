@@ -263,3 +263,9 @@
   padding-left: 20px;
   text-align: left;
 }
+.mobile-img-view {
+  display: none;
+}
+.desktop-img-view {
+  display: block;
+}
