@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Deltape - Automated Fee Management for Educational Institutes</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Favicon -->
+    <link href="./imgnew/deltape-fav.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet" /> -->
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.2.0/css/ionicons.min.css"
+        integrity="sha256-F3Xeb7IIFr1QsWD113kV2JXaEbjhsfpgrKkwZFGIA4E=" crossorigin="anonymous" />
+
+    <!-- Flaticon Font -->
+    <!-- <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" /> -->
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/timeline.css" rel="stylesheet" />
+    <link href="css/mystyles.css" rel="stylesheet" />
+    <link href="css/faq.css" rel="stylesheet" />
+    <link href="css/mobile.css" rel="stylesheet" />
+    <script type="text/javascript">
+        (function (f, b) {
+            if (!b.__SV) {
+                var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) {
+                    function g(a, d) { var b = d.split("."); 2 == b.length && (a = a[b[0]], d = b[1]); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))) } } var a = b; "undefined" !== typeof c ? a = b[c] = [] : c = "mixpanel"; a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d }; a.people.toString = function () { return a.toString(1) + ".people (stub)" }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+                    for (h = 0; h < i.length; h++)g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]) } } for (var d = {}, e = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++)b(j[c]); return d }; b._i.push([e, f, c])
+                }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ?
+                    MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g)
+            }
+        })(document, window.mixpanel || []);
+
+        // Enabling the debug mode flag is useful during implementation,
+        // but it's recommended you remove it for production
+        mixpanel.init('95a7d87662871e48323b6c9f8b7311a4', { debug: true });
+        mixpanel.track('Page_on_loaded');
+    </script>
+
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-fixed shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="./index.html" class="navbar-brand font-weight-bold text-secondary">
+                <span class="text-primary logo-text-main "><img class="logo-text-main-img"
+                        src="./imgnew/deltape-logo1.png" />
+                </span>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold font-weight-bold-sec-cont mx-auto py-0">
+                    <!-- <a href="index.html" class="nav-item nav-link active">Home</a> -->
+                    <a href="#aboutUs" class="nav-item nav-link active">About Us</a>
+
+
+                    <a href="./institutes.html" class="nav-item nav-link active">For Institutes</a>
+                    <a href="./parents.html" class="nav-item nav-link active">For Parents</a>
+                    <!-- <a href="#Features" class="nav-item nav-link active">Features</a>
+          <a href="#HowitWorks" class="nav-item nav-link active">How it Works</a> -->
+                    <!-- <a href="#Benefits" class="nav-item nav-link active">Benefits</a> -->
+                    <a href="./contactus.html" class="nav-item nav-link active">Contact Us</a>
+                </div>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="gallery.html" class="dropdown-item">Gallery</a>
+                        <a href="feature.html" class="dropdown-item">Features</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item active">404 Page</a>
+                    </div>
+                </div> -->
+                <div class="collapse--navbar-collapse" id="navbarSupportedContent">
+                    <div class="header-login-buttons">
+                        <a target="_blank" class="nav-lin1k" href="https://customer.deltape.in/">
+                            <button> Parent Login</button>
+                        </a>
+                        <a target="_blank" class="nav-lin1k" href="https://myinstitute.deltape.in/">
+                            <button> Institute Login</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+    </div>
+    </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary-header1 deltape-page-body-content px-0-px-md-5-mb-5">
+        <div class="row align-items-center px-3">
+            <div class="col-lg-6 text-center text-lg-left px-md-5">
+                <!-- <h4 class="text-white mb-4 mt-5 mt-lg-0">Kids Learning Center</h4> -->
+                <h3 class="display-4 font-weight-bold main-top-header-text text-white1">
+                    <span class="delta-main-color">Effortless Fee Payment</span>
+                </h3>
+                <h3 class="display-4 font-weight-bold main-top-header-text1 text-white2">
+                    <span class="delta-main-color1"> Every time</span>
+                </h3>
+                <p class="text-white12 mb-4">
+                    Revolutionise the way your school or university collects and manages student fees with Deltape's
+                    cutting-edge
+                    digital solution.
+                </p>
+                <a href="#" class="btn btn-primary mt-1 py-3 px-5">Book Demo</a>
+                <a href="#" class="btn btn-secondary mt-1 py-3 px-5 ml-5 learn-More-btn-sec-top">Learn More</a>
+            </div>
+            <div class="col-lg-6 text-center main-img-sec-top-sec-div text-lg-right">
+                <img class="img-fluid main-img-sec mt-5" src="imgnew/home-main-right.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fast-secure-payment-sec">
+        <h2 class="main-new-header">Fast and Secure Payment Method</h2>
+        <div class="fast-secure-payment-sec-con">
+            <div class="payment-sec-box">
+                <img src="./imgnew/Frame 1707482213.png" />
+                <h4 class="main-new-headerh4">Automatic Debit</h4>
+                <ul class="Solutions-sec-points-sec">
+                    <li> Deltape seamlessly integrates with banking systems for automatic fee deductions from parents'
+                        accounts.
+                    </li>
+                    <li> Eliminates the need for manual payment processing.
+                    </li>
+                    <li> Ensures timely and efficient fee payments.
+                    </li>
+                </ul>
+            </div>
+            <div class="payment-sec-box">
+                <img src="./imgnew/Frame 1707482214.png" />
+                <h4 class="main-new-headerh4">Intelligent Reminders</h4>
+
+
+
+                <ul class="Solutions-sec-points-sec">
+                    <li>Deltape's advanced reminder system sends timely notifications to parents.
+                    </li>
+                    <li> It helps parents stay on track with their payment schedules.</li>
+                    <li> This prevents late fees or penalties effectively.</li>
+                </ul>
+            </div>
+            <div class="payment-sec-box">
+                <img src="./imgnew/Frame 1707482214(1).png" />
+                <h4 class="main-new-headerh4">Digital Receipting</h4>
+                <ul class="Solutions-sec-points-sec">
+                    <li>Deltape provides electronic receipts for all fee payments.
+                    </li>
+                    <li>It offers a comprehensive record of transactions for parents and institutes</li>
+                    <li>This streamlines the accounting process for educational institutes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="Power-Integrations-sec">
+        <div class="Power-Integrations-sec-con">
+
+            <div class="Integrations-sec-con-right">
+                <img src="./imgnew/image 140.png" />
+            </div>
+            <div class="Integrations-sec-con-left">
+                <h3>Power Integrations for
+                    Ease of Use </h3>
+                <p>Connect with the tool of your choice for managing payments</p>
+                <div class="Integrations-sub-sec">
+                    <div class="power-box">
+                        <img src="./imgnew/Frame 1707482226(2).png" />
+                        <p>Seamless ERP
+                            Integration</p>
+                    </div>
+                    <div class="power-box">
+                        <img src="./imgnew/Frame 1707482226(3).png" />
+                        <p>Powerful CRM Capabilities</p>
+                    </div>
+                    <div class="power-box">
+                        <img src="./imgnew/Frame 1707482226(4).png" />
+                        <p>Seamless Data Exchange</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="USPs-of-Deltape-sec">
+        <h2 class="main-new-header">Deltape Benefits</h2>
+        <div class="USPs-box-all">
+            <div class="USPs-box-row">
+                <img src="./imgnew/cash-flow (2).png" />
+                <h3>Improved Cash Flow</h3>
+                <p>Automated fee collection and EMI options help educational institutes maintain a steady and
+                    predictable cash
+                    flow</p>
+            </div>
+            <div class="USPs-box-row">
+                <img src="./imgnew/efficiency.png" />
+                <h3>Enhanced Efficiency</h3>
+                <p>By digitising & automating fee management process, we help streamline the operations & reduce
+                    administrative
+                    burdens</p>
+            </div>
+            <div class="USPs-box-row">
+                <img src="./imgnew/best-customer-experience.png" />
+                <h3>Parent Satisfaction</h3>
+                <p>User-friendly interface, flexible payment options, & transparent communication foster a positive
+                    experience
+                    for parents</p>
+            </div>
+            <div class="USPs-box-row">
+                <img src="./imgnew/handcuff 2.png" />
+                <h3>Reduced Delinquencies</h3>
+                <p>Intelligent reminders & seamless payment integration help reduce late payments & outstanding dues</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="Deltape-Works-sec">
+        <div class="Deltape-Works-sec-con">
+            <div class="Deltape-Works-sec-con-left">
+                <h2 class="main-new-header">How Deltape Works</h2>
+
+
+            </div>
+            <div class="Deltape-Works-sec-con-right">
+
+                <h5>Step 1</h5>
+                <h4 class="main-new-headerh4">Account Setup</h4>
+                <p class="main-new-headerp">Deltape's onboarding process is designed to be quick and straightforward,
+                    with
+                    dedicated support to help educational institutes configure the platform according to their specific
+                    requirements.</p>
+                <h5>Step 2</h5>
+                <h4 class="main-new-headerh4">Automated Debit Setup</h4>
+                <p class="main-new-headerp">Deltape's intelligent payment engine seamlessly integrates with banks,
+                    allowing for
+                    the automatic deduction of fees from parents' accounts on predetermined schedules.</p>
+                <h5>Step 3</h5>
+                <h4 class="main-new-headerh4">Reminders and Reporting</h4>
+                <p class="main-new-headerp">Deltape's robust reporting and notification system keeps administrators and
+                    parents
+                    informed about payment status, outstanding dues, and other relevant fee-related information..</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="faq-content">
+
+        <h4 class="main-new-header">You have got Questions</h4>
+        <p class="main-new-headerp">Whether you’re curious about our features, our data handling capabilities or
+            integration
+            options, we’ve got you
+            covered. </p>
+        <div class="faq-content-con">
+            <div class="accordion accordion-type-2 accordion-flush" id="accordion_2">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between activestate">
+                        <a role="button" data-toggle="collapse" href="#collapse_1i" aria-expanded="true">1. What makes
+                            Deltape the
+                            best
+                            tool for parents and institutes alike</a>
+                    </div>
+                    <div id="collapse_1i" class="collapse show" data-parent="#accordion_2" role="tabpanel">
+                        <div class="card-body pa-15">2. The Intellectual Property disclosure will inform users that the
+                            contents, logo and other visual media you created is your property and is protected by
+                            copyright
+                            laws.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse_2i"
+                            aria-expanded="false">3.
+                            Termination
+                            clause</a>
+                    </div>
+                    <div id="collapse_2i" class="collapse" data-parent="#accordion_2">
+                        <div class="card-body pa-15">A Termination clause will inform that users’ accounts on your
+                            website
+                            and mobile app or users’ access to your website and mobile (if users can’t have an account
+                            with
+                            you) can be terminated in case of abuses or at your sole discretion.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse_3i"
+                            aria-expanded="false">4.
+                            Governing
+                            Law</a>
+                    </div>
+                    <div id="collapse_3i" class="collapse" data-parent="#accordion_2">
+                        <div class="card-body pa-15">A Governing Law will inform users which laws govern the agreement.
+                            This should the country in which your company is headquartered or the country from which you
+                            operate your website and mobile app.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse_4i"
+                            aria-expanded="false">Limit
+                            5. what
+                            users can do</a>
+                    </div>
+                    <div id="collapse_4i" class="collapse" data-parent="#accordion_2">
+                        <div class="card-body pa-15">A Limit What Users Can Do clause can inform users that by agreeing
+                            to
+                            use your service, they’re also agreeing to not do certain things. This can be part of a very
+                            long and thorough list in your Terms and Conditions agreements so as to encompass the most
+                            amount of negative uses.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse_5i"
+                            aria-expanded="false">6.
+                            Limitation
+                            of liability of your products</a>
+                    </div>
+                    <div id="collapse_5i" class="collapse" data-parent="#accordion_2">
+                        <div class="card-body pa-15">No matter what kind of goods you sell, best practices direct you to
+                            present any warranties you are disclaiming and liabilities you are limiting in a way that
+                            your
+                            customers will notice.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse_6i"
+                            aria-expanded="false">7. How
+                            to
+                            enforce Terms and Conditions</a>
+                    </div>
+                    <div id="collapse_6i" class="collapse" data-parent="#accordion_2">
+                        <div class="card-body pa-15">While creating and having a Terms and Conditions is important, it’s
+                            far more important to understand how you can make the Terms and Conditions enforceable. You
+                            should always use clickwrap to get users to agree to your Terms and Conditions. Clickwrap is
+                            when you make your users take some action – typically clicking something – to show they’re
+                            agreeing. Here’s how Engine Yard uses the clickwrap agreement with the I agree check box:
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Row -->
+    </div>
+    <div class="container-fluid footer-bg-last bg-secondary text-white mt-5 py-3 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-4 col-md-6 mb-5">
+                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+                    style="font-size: 40px; line-height: 40px">
+                    <i class="flaticon-043-teddy-bear"></i>
+                    <span class="text-white">Deltape</span>
+                </a>
+                <p>
+                    If you're interested in learning more about how Deltape can transform your educational institute's
+                    fee
+                    management process, we'd love to hear from you.
+                </p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Get in Touch</h3>
+                <div class="d-flex">
+                    <!-- <h4 class="fa fa-map-marker-alt text-primary"></h4> -->
+                    <div class="pl-3333">
+                        <h5 class="text-white">Corporate Office:</h5>
+                        <p></p> No. 256, 10th Main, 1st Block,<br /> Hennur Road, Banaswadi, Bangalore North,<br />
+                        Bangalore-
+                        560043, Karnataka
+                        <!-- #45, 9th Cross, JP Nagar, <br />
+              Bangalore - 560056 -->
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <!-- <h4 class="fa fa-envelope text-primary"></h4> -->
+                    <div class="pl-3333">
+                        <h5 class="text-white">Contact:</h5>
+                        <p class="mb-0"> +91 805 080 7711</p>
+                        <p>contact@deltape.in</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5 footer-quick-links row">
+                <div class="col-lg-6 col-md-6 mb-5 footer-quick-links">
+                    <h3 class="text-primary mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a href="/institutes.html" class="nav-item nav-link active">For Institutes</a>
+                        <a href="/parents.html" class="nav-item nav-link active">For Parents</a>
+                        <!-- <a target="_blank" href="https://myinstitute.deltape.in/"
+              class="nav-item nav-link active">Login for Institutes</a>
+            <a target="_blank" href="https://customer.deltape.in/"
+              class="nav-item nav-link active">Login for Parents</a> -->
+                        <a href="#aboutUs" class="nav-item nav-link active">About Us</a>
+                        <a href="#Contact" class="nav-item nav-link active">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-5 footer-quick-links">
+                    <h3 class="text-primary mb-4">Company</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a href="#Contact" class="nav-item nav-link active">Grievance Redressal</a>
+                        <a href="#Contact" class="nav-item nav-link active">Compliance</a>
+                        <a href="./termsandconditions.html" class="nav-item nav-link active">Terms & Conditions</a>
+                        <a href="./privacypolicy.html" class="nav-item nav-link active">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container-fluid pt-3" style="border-top: 1px solid #fff ;">
+            <p class="m-0 text-center text-white">
+                &copy;
+                All Rights Reserved Deltape Technologies Private Limited
+
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- <script src="lib/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

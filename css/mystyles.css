@@ -269,3 +269,36 @@
 .desktop-img-view {
   display: block;
 }
+.contact-us-section {
+  padding-top: 100px;
+}
+.contact-us-section-con {
+  display: flex;
+  width: 80%;
+  gap: 50px;
+  margin: auto;
+  padding-top: 100px;
+}
+.contact-us-section-con > div {
+  width: 50%;
+}
+.contact-us-section-con label {
+  display: block;
+}
+.contact-us-section-right input,
+.contact-us-section-right textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #17a2b8;
+  padding: 7px;
+}
+.contact-us-section-right div {
+  margin-top: 20px;
+}
+.contact-us-section-right input {
+  border-radius: 8px;
+  height: 50px;
+}
+.contact-us-section-right textarea {
+  height: 100px;
+}

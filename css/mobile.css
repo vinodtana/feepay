@@ -66,4 +66,11 @@
     margin: auto;
     margin: 16px;
   }
+  .main-img-sec-top-sec-div {
+    padding: 0px !important;
+  }
+  .main-img-sec {
+    max-width: 100%;
+    width: 100%;
+  }
 }
