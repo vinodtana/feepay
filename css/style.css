@@ -10288,7 +10288,8 @@ a.text-dark:focus {
 }
 .main-img-sec {
   border-radius: 50px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  max-height: 700px;
 }
 .footer-quick-links a {
   color: #fff;

@@ -103,9 +103,9 @@
 
 .Benefits-for-Parents-sec {
   margin-top: 50px;
-  background: #cbe7eb;
+  background: #edfeff;
   padding: 30px 50px;
-  background-color: #cbe7eb;
+  background-color: #edfeff;
 }
 
 .Benefits-for-Parents-sec > p {
@@ -301,4 +301,35 @@
 }
 .contact-us-section-right textarea {
   height: 100px;
+}
+.top-header--100 {
+  margin-top: -150px;
+}
+
+.left-new-image-sec-count {
+  position: absolute;
+  margin-left: -15%;
+  margin-top: -416px;
+}
+.left-new-image-sec-count img {
+  max-height: 960px;
+}
+.right-new-image-sec-count {
+  position: absolute;
+  margin-top: -500px;
+  float: right;
+  text-align: right;
+  right: 0px;
+}
+.right-new-image-sec-count img {
+  max-height: 960px;
+}
+.Solutions-sec-points-sec1 {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.Solutions-sec-points-sec1 li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
 }
