@@ -10309,6 +10309,7 @@ a.text-dark:focus {
 
 .footer-bg-last {
   background-color: #17a2b8 !important;
+  background: linear-gradient(2.1deg, #02fecb, #21467b);
 }
 
 .footer-bg-last * {

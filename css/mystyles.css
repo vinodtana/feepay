@@ -85,7 +85,7 @@
   width: 90%;
   margin: auto;
   text-align: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .fast-secure-payment-sec-con {
@@ -98,14 +98,15 @@
 .fast-secure-payment-sec-con > div {
   padding: 32px 24px;
   border-radius: 16px;
-  box-shadow: 0px 4px 16px 0px #00000029;
+  /* box-shadow: 0px 4px 16px 0px #00000029; */
 }
 
 .Benefits-for-Parents-sec {
-  margin-top: 50px;
-  background: #edfeff;
+  /* margin-top: 50px; */
+  /* background: #edfeff; */
   padding: 30px 50px;
-  background-color: #edfeff;
+  padding-top: 0px;
+  /* background-color: #edfeff; */
 }
 
 .Benefits-for-Parents-sec > p {
@@ -121,22 +122,31 @@
 .Benefits-for-Parents-sec-con {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 .Benefits-for-Parents-sec-con {
+}
+.Benefits-for-Parents-sec-con-left {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .benefit-sec-box p {
   text-align: left;
 }
 .benefit-sec-box {
-  display: flex;
+  /* display: flex; */
   gap: 14px;
   margin-top: 20px;
+  text-align: center;
 }
 .benefit-sec-box h4 {
   margin-top: 0px;
   margin-bottom: 10px;
+}
+.benefit-sec-box img {
+  margin-bottom: 20px;
 }
 /* Power-Integrations-sec */
 .Power-Integrations-sec {
