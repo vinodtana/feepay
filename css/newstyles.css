@@ -299,3 +299,6 @@
 .form-sec-new-sec-all-contact > div {
   width: 100%;
 }
+body img {
+  max-width: 100%;
+}
