@@ -4,7 +4,7 @@
 }
 
 .header-login-buttons button {
-  background: #17a2b8;
+  background: #21467b;
   border: none;
   color: #fff;
   height: 48px;
@@ -15,7 +15,7 @@
   font-weight: 700;
 }
 .delta-main-color {
-  color: #17a2b8;
+  color: #21467b;
 }
 .text-white12 {
   color: #808080;
@@ -245,6 +245,8 @@
   line-height: 24px;
   text-align: left;
   margin-top: 10px;
+  text-transform: uppercase;
+  color: #0057b7;
 }
 .Deltape-Works-sec-con-right p {
   text-align: left;
@@ -287,23 +289,24 @@
   width: 80%;
   gap: 50px;
   margin: auto;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 .contact-us-section-con > div {
   width: 50%;
 }
 .contact-us-section-con label {
   display: block;
+  margin-bottom: 2px;
 }
 .contact-us-section-right input,
 .contact-us-section-right textarea {
   width: 100%;
   border-radius: 8px;
-  border: 1px solid #17a2b8;
+  border: 1px solid #21467b;
   padding: 7px;
 }
 .contact-us-section-right div {
-  margin-top: 20px;
+  margin-top: 16px;
 }
 .contact-us-section-right input {
   border-radius: 8px;
