@@ -13,6 +13,11 @@
   /* font-family: Poppins; */
   font-size: 16px;
   font-weight: 700;
+  background: linear-gradient(122.1deg, #02fecb, #21467b);
+}
+.contact-us-section-right a {
+  background: linear-gradient(122.1deg, #02fecb, #21467b);
+  border: none;
 }
 .delta-main-color {
   color: #21467b;

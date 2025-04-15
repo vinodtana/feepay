@@ -243,7 +243,7 @@
 }
 .new-contact-us-page-sec {
   background: linear-gradient(108.58deg, #02fecb, #21467b);
-  background: #e2edef;
+  background: #e8f1f4;
   display: flow-root;
   padding-top: 75px;
   padding-bottom: 100px;
@@ -301,4 +301,21 @@
 }
 body img {
   max-width: 100%;
+}
+.contact-us-section-right1 h5 {
+  font-size: 16px;
+  color: #21467b;
+  text-transform: uppercase;
+}
+.contact-us-section-right1 h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 8px;
+  margin-bottom: 22px;
+}
+.contact-us-section-right1 p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #555;
 }
